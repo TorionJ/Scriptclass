@@ -8,5 +8,6 @@ function documentPrint(){
     document.write("hello Torion")
 }
 function goodBye(){
+    
     alert("GoodBye Jon")
 }
