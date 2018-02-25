@@ -1,0 +1,70 @@
+body {
+    background-image: url("myPics/mySiteBG.png");
+    background-repeat: repeat;
+    background-position: center center;
+    width: 100%;
+    margin: auto;
+}
+.header {
+    background-color: rgba(121, 110, 13, 0.74);
+    position: fixed;
+    width: 100%;
+    height: 250px;
+    border-radius: 0px;
+    top: 0px;
+    box-shadow: inset 0 0 10px goldenrod;
+}
+.nameHeader{
+    position: relative;
+    top: 45%;
+    left: 15%;
+    text-transform: uppercase;
+    letter-spacing: .15ems;
+    font-size: 50px;
+}
+.content  {
+    width: 100%;
+    margin-top: 275px;
+}
+#aboutMeSec {
+    background-color: whitesmoke;
+    width: 960px;
+    margin: 0 auto;
+}
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin-bottom: 5px;
+}
+#aboutMe {
+    position: relative;
+    right: 15px;
+    border-bottom: 3px solid black;
+    width: 700px;
+    left: 150px;
+    top: 0px;
+}
+ul {
+    position: relative;
+    float: right;
+    top: 10px;
+}
+li {
+    display: inline;
+    margin-right: 0 auto;
+    padding-top: 10px;
+}
+li a{
+    color: white;
+    vertical-align: middle;
+    text-decoration: none;   
+}
+#borderRight {
+    position: relative;
+    border-right: 1px solid white;
+
+}
+a {
+    padding: 10px;
+}
+
