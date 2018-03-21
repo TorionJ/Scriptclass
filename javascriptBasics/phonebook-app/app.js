@@ -37,13 +37,7 @@ app.get('/', (req, res) => {
         res.render("index.ejs", {contacts: result})
     })
 })
-// ^^^^^
-//binding root context localhost:3000
-//to GET method that responds with index.html file
-//req - HTTP req made client
-// res - HTTP response
-// sendfile is a method in express framework that sends file back
-// to the client
+
 app.get('/style.css', (req, res) => {
     res.sendFile(__dirname + '/style.css');
 });
@@ -74,4 +68,4 @@ app.listen(port, () =>{
     console.log("Server listening on port " + port);
 });
 //^^^
-// Informing your app to listen to port number you have provided up top
+// Inform the app to listen to the port number provided up top
