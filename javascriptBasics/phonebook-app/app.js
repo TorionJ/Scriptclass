@@ -57,9 +57,9 @@ app.get('/results', (req, res) => {
 // res - HTTP response
 // sendfile is a method in express framework that sends file back
 // to the client
-=======
 
->>>>>>> 193fa3cdc0e648c62bfa6f5f6e7e1704c22f2252
+
+
 app.get('/style.css', (req, res) => {
     res.sendFile(__dirname + '/style.css');
 });
