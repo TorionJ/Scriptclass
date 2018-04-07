@@ -37,6 +37,7 @@ app.get('/', (req, res) => {
         res.render("index.ejs", {contacts: result})
     })
 })
+<<<<<<< HEAD
 app.get('/results', (req, res) => {
     
     Contact.find({firstName},(err, result) => {
@@ -56,6 +57,9 @@ app.get('/results', (req, res) => {
 // res - HTTP response
 // sendfile is a method in express framework that sends file back
 // to the client
+=======
+
+>>>>>>> 193fa3cdc0e648c62bfa6f5f6e7e1704c22f2252
 app.get('/style.css', (req, res) => {
     res.sendFile(__dirname + '/style.css');
 });
@@ -86,4 +90,4 @@ app.listen(port, () =>{
     console.log("Server listening on port " + port);
 });
 //^^^
-// Informing your app to listen to port number you have provided up top
+// Inform the app to listen to the port number provided up top
