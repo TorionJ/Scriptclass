@@ -26,7 +26,7 @@ var Contact = mongoose.model("Phonebook", myContactSchema);
 //then connect the app to the DB in the specified location
 
 app.get('/', (req, res) => {
-
+    
     Contact.find((err, result) => {
         //if unable to get results
         //log the error to the cosole
@@ -35,6 +35,18 @@ app.get('/', (req, res) => {
         //a templating variable named contacts that we can access
         //in index.ejs
         res.render("index.ejs", {contacts: result})
+    })
+})
+app.get('/results', (req, res) => {
+    
+    Contact.find({firstName},(err, result) => {
+        //if unable to get results
+        //log the error to the cosole
+        if (err) return console.log(err)
+        //if success render index.ejs and assign results to
+        //a templating variable named contacts that we can access
+        //in index.ejs
+        res.render('index.ejs', { link: "result.js" });
     })
 })
 // ^^^^^
