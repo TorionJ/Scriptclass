@@ -1,0 +1,24 @@
+#grid {
+    float: left;
+    width: 30%;
+    margin:1.66%;
+}
+@font-face {
+    font-family: 'Billabong';
+    font-style: normal;
+    font-weight: normal;
+    src: url('Billabong.woff') format('woff');
+    }
+h1 {
+    font-family: Billabong, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin:1.66%;
+    color: gainsboro;
+}
+#header{
+    width:10%;
+    margin: 1.66%;
+}
+body{
+    background-color: black;
+}
